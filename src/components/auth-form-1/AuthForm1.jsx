@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import LoginForm from "./LoginForm";
-import SignupForm from "./SignupForm";
+import LoginForm from "./LoginForm1";
+import SignupForm from "./SignupForm1";
 import "./authForm1.css";
 
 const AuthForm1 = () => {
@@ -27,14 +27,12 @@ const AuthForm1 = () => {
   }, [isLogin]);
 
   return (
-    <div className="auth1 login">
-      <div className="login__form-wrapper">
-        {isLogin ? (
-          <LoginForm switchForm={() => setIsLogin(false)} />
-        ) : (
-          <SignupForm switchForm={() => setIsLogin(true)} />
-        )}
-      </div>
+    <div className="auth1">
+      {isLogin ? (
+        <LoginForm switchForm={() => setIsLogin(false)} />
+      ) : (
+        <SignupForm switchForm={() => setIsLogin(true)} />
+      )}
     </div>
   );
 };
