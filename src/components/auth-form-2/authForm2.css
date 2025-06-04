@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(0, 0%, 0%);
+  --border-color: hsla(0, 0%, 100%, 0.7);
+
+  --body-font: "Poppins", sans-serif;
+  --h1-font-size: 2rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.813rem;
+  --font-medium: 500;
+}
+
+.auth2 {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    var(--color-purple),
+    var(--color-purple-lighten)
+  );
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+.auth2 .login__form {
+  min-height: 460px;
+  position: relative;
+  margin-inline: 1rem;
+  background-color: hsla(0, 0%, 100%, 0.01);
+  border: 2px solid var(--border-color);
+  padding: 2.5rem 1rem;
+  color: var(--white-color);
+  border-radius: 1rem;
+  backdrop-filter: blur(16px);
+}
+
+.auth2 .login__title {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  margin-bottom: 1.25rem;
+}
+
+.auth2 .login__inputs,
+.auth2 .login__box {
+  display: grid;
+}
+
+.auth2 .login__inputs {
+  row-gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.auth2 .login__box {
+  grid-template-columns: 1fr max-content;
+  column-gap: 0.75rem;
+  align-items: center;
+  border: 2px solid var(--border-color);
+  padding-inline: 1.25rem;
+  border-radius: 4rem;
+}
+
+.auth2 .login__input {
+  width: 100%;
+  background: none;
+  color: var(--white-color);
+  padding-block: 1rem;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+.auth2 .login__input::placeholder {
+  color: var(--white-color);
+}
+
+.auth2 .login__box i {
+  font-size: 1.25rem;
+}
+
+.auth2 .login__check,
+.auth2 .login__check-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth2 .login__check {
+  margin-bottom: 1rem;
+  font-size: var(--small-font-size);
+}
+
+.auth2 .login__check-box {
+  column-gap: 0.5rem;
+}
+
+.auth2 .login__check-input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--white-color);
+}
+
+.auth2 .login__forgot {
+  color: var(--white-color);
+}
+
+.auth2 .login__forgot:hover {
+  text-decoration: underline;
+}
+
+.auth2 .login__button {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: var(--white-color);
+  border-radius: 4rem;
+  color: var(--black-color);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+.auth2 .login__register {
+  font-size: var(--small-font-size);
+  text-align: center;
+}
+
+.auth2 .login__register a {
+  color: var(--white-color);
+  font-weight: var(--font-medium);
+}
+
+.auth2 .login__register a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 576px) {
+  .auth2 {
+    justify-content: center;
+  }
+
+  .auth2 .login__form {
+    width: 420px;
+    padding-inline: 2.5rem;
+  }
+
+  .auth2 .login__title {
+    margin-bottom: 2rem;
+  }
+}
