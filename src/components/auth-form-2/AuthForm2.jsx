@@ -7,13 +7,13 @@ const AuthForm2 = () => {
   const [isLogin, setIsLogin] = useState(true);
 
   return (
-    <div className="auth1 login">
+    <section className="auth2">
       {isLogin ? (
         <LoginForm2 switchForm={() => setIsLogin(false)} />
       ) : (
         <SignupForm2 switchForm={() => setIsLogin(true)} />
       )}
-    </div>
+    </section>
   );
 };
 
