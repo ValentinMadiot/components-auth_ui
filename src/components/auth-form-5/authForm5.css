@@ -1,0 +1,189 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --first-color: hsl(244, 75%, 57%);
+  --white-color: #fff;
+  --black-color: #3f3d56;
+  --gray-color: #f1f1f1;
+  --border-color: #3f3d5691;
+
+  --body-font: "Poppins", sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+}
+
+.auth5 {
+  padding: 1rem 0.5rem;
+  position: relative;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(
+    135deg,
+    var(--color-green-light),
+    var(--color-green-lighten)
+  );
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+.form__container {
+  background-color: var(--black-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+.form__container h1 {
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.form__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.login {
+  flex-direction: column !important;
+  gap: 0 !important;
+}
+
+.form__inner article {
+  margin-top: 0.75rem;
+}
+
+.form__container label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.4rem;
+}
+
+.form__container input {
+  border: 2px solid var(--border-color);
+  border-radius: 0.6rem;
+  outline: none;
+  padding: 0.625rem 1.25rem;
+  width: 100%;
+  font-family: var(--body-font);
+}
+
+.form__container input:focus {
+  border-color: var(--black-color);
+}
+
+.form__btn {
+  color: var(--white-color);
+  padding: 0.625rem 3rem;
+  font-size: 1rem;
+  background-color: var(--black-color);
+  margin-top: 1.25rem;
+  border: none;
+  outline: none;
+  border-radius: 0.625rem;
+  transition: opacity 0.2s ease-in-out;
+  width: 100%;
+}
+
+.form__btn:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.form__checkboxes {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  position: relative;
+  background-color: #fff;
+  border-radius: 50px;
+  margin: 0 1.25rem 0 0;
+  width: 50px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.ball {
+  background-color: var(--black-color);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  transition: transform 0.15s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.form__switch {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: var(--small-font-size);
+}
+
+.form__switch span {
+  font-weight: 600;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
+.form__switch span:hover {
+  text-decoration: underline;
+}
+
+/*=============== BREAKPOINTS ===============*/
+@media (min-width: 465px) {
+  .auth5 {
+    padding: 2rem 1rem;
+  }
+
+  .form__container {
+    padding: 2rem;
+    min-height: 645px;
+    min-width: 425px;
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (min-width: 700px) {
+  .auth5 {
+    min-height: auto;
+  }
+
+  .form__container {
+    min-height: 520px;
+    min-width: 506px;
+  }
+
+  .form__container h1 {
+    margin-bottom: 2rem;
+  }
+
+  .form__inner {
+    flex-direction: row;
+    gap: 1.25rem;
+  }
+
+  .form__inner article {
+    flex: 1;
+    margin-top: 1.25rem;
+  }
+}
