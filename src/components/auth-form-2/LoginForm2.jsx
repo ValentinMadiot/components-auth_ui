@@ -7,7 +7,7 @@ const LoginForm2 = ({ switchForm }) => {
         <div className="login__box">
           <input
             type="email"
-            placeholder="Email id"
+            placeholder="Email"
             required
             className="login__input"
           />
