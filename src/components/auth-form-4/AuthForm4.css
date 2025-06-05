@@ -1,43 +1,5 @@
-/*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
-:root {
-  --first-color: hsl(79, 100%, 49%);
-  --white-color: #fff;
-  --black-color: #000;
-  --body-font: "Poppins", sans-serif;
-  --normal-font-size: 1rem;
-  --small-font-size: 0.813rem;
-}
-
-@media screen and (min-width: 968px) {
-  :root {
-    --normal-font-size: 1rem;
-  }
-}
-
-/*=============== BASE ===============*/
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-}
-
-input,
-button {
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  border: none;
-  outline: none;
-}
-
-/*=============== FORM ===============*/
 .auth4 {
   position: relative;
   height: 100vh;
@@ -48,38 +10,38 @@ button {
     var(--color-green-light),
     var(--color-green-lighten)
   );
-  font-family: var(--body-font);
+  font-family: var(--font-family);
   font-size: var(--normal-font-size);
 }
 
-.form__content {
+.auth4 .form__content {
   display: grid;
   row-gap: 1.5rem;
 }
 
-.form__input,
-.form__label,
-.form__submit {
+.auth4 .form__input,
+.auth4 .form__label,
+.auth4 .form__submit {
   font-size: var(--normal-font-size);
-  font-family: var(--body-font);
+  font-family: var(--font-family);
   border: 0;
   outline: none;
 }
 
-.form__box {
+.auth4 .form__box {
   width: 312px;
   height: 59px;
   position: relative;
 }
 
-.form__shadow {
+.auth4 .form__shadow {
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: var(--black-color);
 }
 
-.form__input {
+.auth4 .form__input {
   position: absolute;
   border: 2.5px solid var(--black-color);
   background-color: var(--white-color);
@@ -90,11 +52,11 @@ button {
   transition: transform 0.3s;
 }
 
-.form__input::placeholder {
+.auth4 .form__input::placeholder {
   transition: opacity 0.5s;
 }
 
-.form__label {
+.auth4 .form__label {
   z-index: 100;
   position: absolute;
   top: 16px;
@@ -106,51 +68,53 @@ button {
   transition: 0.2s;
 }
 
-.form__button {
+.auth4 .form__button {
   justify-self: flex-end;
   background-color: var(--black-color);
 }
 
-.form__submit {
+.auth4 .form__submit {
   padding: 0.875rem 1.5rem;
   color: var(--black-color);
-  background-color: var(--first-color);
+  background-color: hsl(79, 100%, 49%);
   cursor: pointer;
   transition: transform 0.3s;
 }
 
-.form__submit:hover {
+.auth4 .form__submit:hover {
   transform: translate(-6px, -6px);
 }
 
-.form__switch {
+.auth4 .form__switch {
   font-size: var(--small-font-size);
   margin-top: 0.5rem;
   text-align: center;
   color: var(--black-color);
 }
 
-.form__switch span {
-  color: var(--first-color);
+.auth4 .form__switch span {
+  color: hsl(79, 100%, 49%);
   cursor: pointer;
   font-weight: bold;
 }
 
 /* Input animation */
-.form__input:focus::placeholder {
+.auth4 .form__input:focus::placeholder {
   opacity: 0;
   transition: 0.3s;
 }
 
-.form__input:focus,
-.form__input:not(:placeholder-shown).form__input:not(:focus) {
+.auth4 .form__input:focus,
+.auth4 .form__input:not(:placeholder-shown).form__input:not(:focus) {
   transform: translate(-8px, -8px);
   padding: 28px 18px 18px;
   animation: input-animation 0.5s;
 }
 
-.form__input:focus + .form__label,
-.form__input:not(:placeholder-shown).form__input:not(:focus) + .form__label {
+.auth4 .form__input:focus + .form__label,
+.auth4
+  .form__input:not(:placeholder-shown).form__input:not(:focus)
+  + .form__label {
   opacity: 1;
   top: 2px;
   left: 12px;
@@ -169,16 +133,15 @@ button {
   }
 }
 
-/*=============== BREAKPOINTS ===============*/
 @media screen and (max-width: 340px) {
-  .form__content,
-  .form__box {
+  .auth4 .form__content,
+  .auth4 .form__box {
     width: 260px;
   }
 }
 
 @media screen and (min-width: 968px) {
-  .form__content {
+  .auth4 .form__content {
     zoom: 1.1;
   }
 }
