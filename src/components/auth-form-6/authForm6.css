@@ -4,15 +4,17 @@
   --font-family-auth6: "Montserrat", system-ui;
   --first-color-auth6: hsl(208, 92%, 54%);
   --first-color-auth6-alt: hsl(208, 88%, 50%);
-  --title-color-auth6: hsl(220, 68%, 4%);
   --text-color-auth6: hsl(220, 15%, 66%);
-  --body-color-auth6: hsl(0, 0%, 100%);
-  --container-color-auth6: hsl(220, 50%, 97%);
 }
 
 .auth6__bg {
   position: relative;
   height: 100vh;
+  background: linear-gradient(
+    135deg,
+    var(--color-white-soft),
+    var(--color-white-smoke)
+  );
 }
 
 .auth6__blob {
@@ -25,7 +27,6 @@
   max-width: 1120px;
   margin-inline: 1.5rem;
   color: var(--text-color-auth6);
-  background-color: var(--body-color-auth6);
   font-family: var(--font-family-auth6);
   font-size: var(--normal-font-size);
 }
@@ -38,7 +39,7 @@
 .auth6__title {
   font-size: var(--big-font-size);
   font-weight: 700;
-  color: var(--title-color-auth6);
+  color: var(--color-bg);
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -47,11 +48,6 @@
   max-width: 380px;
   margin-inline: auto;
 }
-
-/* .auth6__form {
-  display: flex;
-  flex-direction: column;
-} */
 
 .auth6__content,
 .auth6__group {
@@ -63,7 +59,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  background-color: var(--container-color-auth6);
+  background-color: var(--color-white-soft);
   border-radius: 1rem;
 }
 
@@ -74,7 +70,7 @@
   font-family: var(--font-family-auth6);
   font-weight: var(--font-semi-bold);
   font-size: var(--normal-font-size);
-  border: 3px solid transparent;
+  border: 3px solid var(--white-color);
   border-radius: 1rem;
   z-index: 1;
   transition: border-color 0.4s;
@@ -83,7 +79,6 @@
 .auth6__input:autofill {
   transition: background-color 6000s, color 6000s;
 }
-
 .auth6__input:focus {
   border-color: var(--first-color-auth6);
   padding-block: 2rem 1rem;
@@ -92,6 +87,9 @@
 .auth6__input:focus ~ .auth6__label {
   transform: translateY(-12px);
   font-size: var(--smaller-font-size);
+  color: var(--first-color-auth6);
+}
+.auth6__input:focus ~ .auth6__icon {
   color: var(--first-color-auth6);
 }
 
@@ -177,7 +175,7 @@
   text-align: center;
   font-size: var(--small-font-size);
   font-weight: var(--font-semi-bold);
-  color: var(--title-color-auth6);
+  color: var(--color-bg);
   margin-bottom: 1rem;
 }
 
@@ -194,7 +192,7 @@
 .auth6__social-link {
   width: 32px;
   height: 32px;
-  background-color: var(--body-color-auth6);
+  background-color: var(--white-color);
   box-shadow: 0 4px 8px hsla(0, 0%, 0%, 0.1);
   border-radius: 0.5rem;
   display: grid;
