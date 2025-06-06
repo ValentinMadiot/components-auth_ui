@@ -12,7 +12,7 @@ const AuthForm6 = () => {
   };
 
   return (
-    <section className="auth6__bg">
+    <section className="auth6__bg" id="auth6">
       <SvgMaskedImage />
       <div className={`auth6 ${!isLogin ? "active" : ""}`}>
         {isLogin ? (

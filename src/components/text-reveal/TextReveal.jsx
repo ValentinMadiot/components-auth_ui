@@ -18,6 +18,7 @@ function TextReveal() {
       <motion.h1
         initial="hidden"
         whileInView="reveal"
+        viewport={{ once: true }}
         transition={{ staggerChildren: 0.04 }}>
         {headingChars.map((char, i) => (
           <motion.span
@@ -32,6 +33,7 @@ function TextReveal() {
       <motion.p
         initial="hidden"
         whileInView="reveal"
+        viewport={{ once: true }}
         transition={{ staggerChildren: 0.02 }}>
         {textChars.map((char, i) => (
           <motion.span

@@ -1,0 +1,130 @@
+.auth-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  padding-bottom: 5rem;
+}
+
+.auth-menu button {
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0d1117;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.auth-menu button:nth-child(1) {
+  background: linear-gradient(
+    135deg,
+    var(--color-blue),
+    var(--color-blue-lighten)
+  );
+}
+.auth-menu button:nth-child(1):hover {
+  background: linear-gradient(
+    180deg,
+    var(--color-blue),
+    var(--color-blue-lighten)
+  );
+}
+
+.auth-menu button:nth-child(2) {
+  background: linear-gradient(
+    135deg,
+    var(--color-purple),
+    var(--color-purple-lighten)
+  );
+}
+.auth-menu button:nth-child(2):hover {
+  background: linear-gradient(
+    180deg,
+    var(--color-purple),
+    var(--color-purple-lighten)
+  );
+}
+
+.auth-menu button:nth-child(3) {
+  background: linear-gradient(
+    135deg,
+    var(--color-orange),
+    var(--color-orange-lighten)
+  );
+}
+.auth-menu button:nth-child(3):hover {
+  background: linear-gradient(
+    180deg,
+    var(--color-orange),
+    var(--color-orange-lighten)
+  );
+}
+
+.auth-menu button:nth-child(4) {
+  background: linear-gradient(
+    135deg,
+    var(--color-green),
+    var(--color-green-lighten)
+  );
+}
+.auth-menu button:nth-child(4):hover {
+  background: linear-gradient(
+    180deg,
+    var(--color-green),
+    var(--color-green-lighten)
+  );
+}
+
+.auth-menu button:nth-child(5) {
+  background: linear-gradient(
+    135deg,
+    var(--color-red),
+    var(--color-red-lighten)
+  );
+}
+.auth-menu button:nth-child(5):hover {
+  background: linear-gradient(
+    180deg,
+    var(--color-red),
+    var(--color-red-lighten)
+  );
+}
+
+.auth-menu button:nth-child(6) {
+  background: linear-gradient(
+    135deg,
+    var(--color-white-soft),
+    var(--color-white-smoke)
+  );
+}
+.auth-menu button:nth-child(6):hover {
+  background: linear-gradient(
+    180deg,
+    var(--color-white-soft),
+    var(--color-white-smoke)
+  );
+}
+
+@media (max-width: 768px) {
+  .auth-menu {
+    gap: 2rem;
+  }
+  .auth-menu button {
+    width: 3.2rem;
+    height: 3.2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .auth-menu {
+    gap: 1.5rem;
+  }
+  .auth-menu button {
+    width: 2.7rem;
+    height: 2.7rem;
+    font-size: 1.2rem;
+  }
+}

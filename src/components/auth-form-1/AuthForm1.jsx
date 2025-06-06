@@ -27,7 +27,7 @@ const AuthForm1 = () => {
   }, [isLogin]);
 
   return (
-    <section className="auth1">
+    <section className="auth1" id="auth1">
       {isLogin ? (
         <LoginForm switchForm={() => setIsLogin(false)} />
       ) : (

@@ -9,7 +9,7 @@ const AuthForm5 = () => {
   const toggleForm = () => setIsLogin((prev) => !prev);
 
   return (
-    <section className="auth5">
+    <section className="auth5" id="auth5">
       {isLogin ? (
         <LoginForm5 switchForm={toggleForm} />
       ) : (
