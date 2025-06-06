@@ -5,7 +5,7 @@ const LoginForm6 = ({ onSwitch }) => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <div className="auth6__access">
+    <div className="auth6__login">
       <h1 className="auth6__title">Log in to your account.</h1>
 
       <div className="auth6__area">
