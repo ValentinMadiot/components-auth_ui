@@ -4,65 +4,67 @@ const LoginForm3 = ({ switchForm }) => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <form className="login__form">
+    <form className="auth3__form">
       <div>
-        <h1 className="login__title">
-          <span>Welcome</span> Back
+        <h1 className="auth3__title">
+          <span>Connexion</span> rapide
         </h1>
-        <p className="login__description">Welcome! Please login to continue.</p>
+        <p className="auth3__description">
+          Connecte-toi pour poursuivre l’aventure.
+        </p>
       </div>
 
       <div>
-        <div className="login__inputs">
+        <div className="auth3__inputs">
           <div>
-            <label className="login__label">Email</label>
+            <label className="auth3__label">Email</label>
             <input
               type="email"
-              placeholder="Enter your email address"
+              placeholder="Entrez votre adresse email"
               required
-              className="login__input"
+              className="auth3__input"
             />
           </div>
 
           <div>
-            <label className="login__label">Password</label>
-            <div className="login__box">
+            <label className="auth3__label">Mot de passe</label>
+            <div className="auth3__box">
               <input
-                className="login__input"
+                className="auth3__input"
                 type={showPassword ? "text" : "password"}
-                placeholder="Enter your password"
+                placeholder="Entrez votre mot de passe"
                 required
               />
               <i
                 className={`ri-${
                   showPassword ? "eye-line" : "eye-off-line"
-                } login__eye`}
+                } auth3__eye`}
                 onClick={() => setShowPassword(!showPassword)}></i>
             </div>
           </div>
         </div>
 
-        <div className="login__check">
-          <input type="checkbox" className="login__check-input" />
-          <label className="login__check-label">Remember me</label>
+        <div className="auth3__check">
+          <input type="checkbox" className="auth3__check-input" />
+          <label className="auth3__check-label">Se souvenir de moi</label>
         </div>
       </div>
 
       <div>
-        <div className="login__buttons">
-          <button className="login__button" type="submit">
-            Log In
+        <div className="auth3__buttons">
+          <button className="auth3__button" type="submit">
+            Connexion
           </button>
           <button
-            className="login__button login__button-ghost"
+            className="auth3__button auth3__button-ghost"
             onClick={(e) => {
               e.preventDefault();
               switchForm();
             }}>
-            Sign Up
+            S’inscrire
           </button>
         </div>
-        <a className="login__forgot">Forgot Password?</a>
+        <a className="auth3__forgot">Mot de passe oublié ?</a>
       </div>
     </form>
   );

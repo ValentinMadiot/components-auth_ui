@@ -20,18 +20,18 @@
   padding: 1rem;
 }
 
-.auth3 .login__content,
-.auth3 .login__form,
-.auth3 .login__inputs {
+.auth3__content,
+.auth3__form,
+.auth3__inputs {
   display: grid;
 }
 
-.auth3 .login__content {
+.auth3__content {
   width: 100%;
   max-width: 450px;
 }
 
-.auth3 .login__form {
+.auth3__form {
   min-height: 523px;
   background-color: hsla(244, 16%, 92%, 0.6);
   border: 2px solid hsla(244, 16%, 92%, 0.75);
@@ -42,27 +42,31 @@
   width: 100%;
 }
 
-.auth3 .login__title {
+.auth3__title {
   color: var(--title-color-auth3);
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
 }
 
-.auth3 .login__title span {
+.auth3__title span {
   color: var(--color-orange);
 }
 
-.auth3 .login__description {
+.auth3__description {
   font-size: var(--small-font-size);
   margin-bottom: 1rem;
 }
 
-.auth3 .login__inputs {
+.auth3__inputs {
   row-gap: 1rem;
   margin-bottom: 1rem;
 }
 
-.auth3 .login__label {
+.auth3__field {
+  position: relative;
+}
+
+.auth3__label {
   display: block;
   color: var(--title-color-auth3);
   font-size: var(--small-font-size);
@@ -70,7 +74,7 @@
   margin-bottom: 0.25rem;
 }
 
-.auth3 .login__input {
+.auth3__input {
   width: 100%;
   padding: 14px 12px;
   border-radius: 6px;
@@ -83,24 +87,89 @@
   transition: border 0.4s;
 }
 
-.auth3 .login__input::placeholder {
+.auth3__input::placeholder {
   color: var(--text-color-auth3);
 }
 
-.auth3 .login__input:focus,
-.auth3 .login__input:valid {
+.auth3__input:focus,
+.auth3__input:valid {
   border: 2px solid var(--color-orange);
 }
 
-.auth3 .login__box {
+.auth3__error {
+  position: absolute;
+  right: 0.5rem;
+  bottom: -1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--error-color);
+  font-size: var(--smaller-font-size);
+  font-weight: 500;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s;
+}
+
+.auth3__error i {
+  font-size: 1rem;
+}
+
+.auth3__field.invalid .login__input {
+  border-color: var(--error-color);
+}
+
+.auth3__field.invalid .login__error {
+  opacity: 1;
+}
+
+.auth3__field.valid .login__input {
+  border-color: var(--color-orange);
+}
+
+/* Barre de force */
+/* .auth3__ligne {
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.auth3__l1,
+.auth3__l2,
+.auth3__l3 {
+  width: 30%;
+  height: 5px;
+  margin: 0 5px 0;
+  position: relative;
+  display: none;
+}
+.auth3__l1 {
+  background: rgb(182, 182, 13);
+}
+.auth3__l2 {
+  background: rgb(151, 85, 85);
+}
+.auth3__l3 {
+  background: green;
+}
+.auth3__ligne span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10px;
+} */
+
+.auth3__box {
   position: relative;
 }
 
-.auth3 .login__box .login__input {
+.auth3__box .login__input {
   padding-right: 36px;
 }
 
-.auth3 .login__eye {
+.auth3__eye {
   width: max-content;
   height: max-content;
   position: absolute;
@@ -112,14 +181,14 @@
   cursor: pointer;
 }
 
-.auth3 .login__check {
+.auth3__check {
   display: flex;
   column-gap: 0.5rem;
   align-items: center;
   margin-bottom: 1rem;
 }
 
-.auth3 .login__check-input {
+.auth3__check-input {
   appearance: none;
   width: 16px;
   height: 16px;
@@ -128,11 +197,11 @@
   border-radius: 0.25rem;
 }
 
-.auth3 .login__check-input:checked {
+.auth3__check-input:checked {
   background: var(--color-orange);
 }
 
-.auth3 .login__check-input:checked::before {
+.auth3__check-input:checked::before {
   content: "✔";
   display: block;
   color: #fff;
@@ -140,17 +209,17 @@
   transform: translate(1.5px, -2.5px);
 }
 
-.auth3 .login__check-label {
+.auth3__check-label {
   font-size: var(--small-font-size);
 }
 
-.auth3 .login__buttons {
+.auth3__buttons {
   display: flex;
   gap: 0.75rem;
   flex-wrap: wrap;
 }
 
-.auth3 .login__button {
+.auth3__button {
   flex: 1;
   padding: 14px 2rem;
   border-radius: 6px;
@@ -168,14 +237,14 @@
   cursor: pointer;
 }
 
-.auth3 .login__button-ghost {
+.auth3__button-ghost {
   background: hsla(244, 16%, 92%, 0.6);
   border: 2px solid var(--color-orange);
   color: var(--color-orange);
   box-shadow: none;
 }
 
-.auth3 .login__forgot {
+.auth3__forgot {
   font-size: var(--smaller-font-size);
   font-weight: var(--font-semi-bold);
   color: var(--color-orange);
@@ -183,51 +252,51 @@
   cursor: pointer;
 }
 
-.auth3 .login__forgot:hover {
+.auth3__forgot:hover {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 360px) {
-  .auth3 .login__form {
+@media screen and (max-width: 374px) {
+  .auth3__form {
     min-height: 620px;
   }
-  .auth3 .login__buttons {
+  .auth3__buttons {
     flex-direction: column;
   }
 }
 
 @media screen and (min-width: 576px) {
-  .auth3 .login__form {
+  .auth3__form {
     max-width: 450px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .auth3 .login__form {
+  .auth3__form {
     min-height: 550px;
   }
-  .auth3 .login__title {
+  .auth3__title {
     font-size: 1.75rem;
   }
-  .auth3 .login__description,
-  .auth3 .login__label,
-  .auth3 .login__button {
+  .auth3__description,
+  .auth3__label,
+  .auth3__button {
     font-size: 1rem;
   }
-  .auth3 .login__description,
-  .auth3 .login__label,
-  .auth3 .login__check-label,
-  .auth3 .login__button,
-  .auth3 .login__forgot {
+  .auth3__description,
+  .auth3__label,
+  .auth3__check-label,
+  .auth3__button,
+  .auth3__forgot {
     font-size: 0.875rem;
   }
-  .auth3 .login__input {
+  .auth3__input {
     font-size: 0.813rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .auth3 .login__form {
+  .auth3__form {
     min-height: 655px;
     row-gap: 2rem;
     padding: 3rem;
@@ -235,34 +304,34 @@
     border: 2.5px solid hsla(244, 16%, 92%, 0.75);
   }
 
-  .auth3 .login__description,
-  .auth3 .login__label,
-  .auth3 .login__button {
+  .auth3__description,
+  .auth3__label,
+  .auth3__button {
     font-size: var(--normal-font-size);
   }
 
-  .auth3 .login__inputs {
+  .auth3__inputs {
     row-gap: 1.25rem;
     margin-bottom: 0.75rem;
   }
 
-  .auth3 .login__input {
+  .auth3__input {
     border: 2.5px solid var(--text-color-auth3);
     padding: 1rem;
     font-size: var(--small-font-size);
   }
 
-  .auth3 .login__input:focus,
-  .auth3 .login__input:valid {
+  .auth3__input:focus,
+  .auth3__input:valid {
     border: 2.5px solid var(--color-orange);
   }
 
-  .auth3 .login__button {
+  .auth3__button {
     padding-block: 1rem;
     margin-bottom: 1.25rem;
   }
 
-  .auth3 .login__button-ghost {
+  .auth3__button-ghost {
     border: 2.5px solid var(--color-orange);
   }
 }

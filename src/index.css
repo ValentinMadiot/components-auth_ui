@@ -7,6 +7,7 @@
   --tiny-font-size: 0.688rem;
   --font-semi-bold: 600;
   --font-medium: 500;
+  --error-color: hsl(0, 70%, 50%);
 
   /* === NEUTRES === */
   --white-color: hsl(0, 0%, 100%);
