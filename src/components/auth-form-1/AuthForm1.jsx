@@ -14,10 +14,10 @@ const AuthForm1 = () => {
       <div className={`flip-card ${!isLogin ? "flipped" : ""}`}>
         <div className="flip-card-inner">
           <div className="flip-card-front">
-            <SignupForm switchForm={switchForm} />
+            <LoginForm switchForm={switchForm} />
           </div>
           <div className="flip-card-back">
-            <LoginForm switchForm={switchForm} />
+            <SignupForm switchForm={switchForm} />
           </div>
         </div>
       </div>

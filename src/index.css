@@ -134,7 +134,7 @@ img {
   height: 100%;
   backface-visibility: hidden;
   border-radius: 1rem;
-  /* background-color: var(--colorSecondary); */
+  background-color: transparent;
   /* padding: 2rem; */
   display: flex;
   flex-direction: column;
