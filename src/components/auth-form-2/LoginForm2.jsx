@@ -1,58 +1,58 @@
 const LoginForm2 = ({ switchForm }) => {
   return (
-    <form className="login__form">
-      <h1 className="login__title">Login</h1>
+    <form className="auth2__form">
+      <h1 className="auth2__title">Connexion</h1>
 
-      <div className="login__inputs">
-        <div className="login__box">
+      <div className="auth2__inputs">
+        <div className="auth2__box">
           <input
             type="email"
             placeholder="Email"
             required
-            className="login__input"
+            className="auth2__input"
           />
           <i className="ri-mail-fill"></i>
         </div>
 
-        <div className="login__box">
+        <div className="auth2__box">
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Mot de passe"
             required
-            className="login__input"
+            className="auth2__input"
           />
           <i className="ri-lock-2-fill"></i>
         </div>
       </div>
 
-      <div className="login__check">
-        <div className="login__check-box">
+      <div className="auth2__check">
+        <div className="auth2__check-box">
           <input
             type="checkbox"
-            className="login__check-input"
+            className="auth2__check-input"
             id="user-check"
           />
-          <label htmlFor="user-check" className="login__check-label">
-            Remember me
+          <label htmlFor="user-check" className="auth2__check-label">
+            Se souvenir de moi
           </label>
         </div>
 
-        <a className="login__forgot">Forgot Password?</a>
+        <a className="auth2__forgot">Mot de passe oublié ?</a>
       </div>
 
-      <button type="submit" className="login__button">
-        Login
+      <button type="submit" className="auth2__button">
+        Connexion
       </button>
 
-      <div className="login__register">
-        Don't have an account?{" "}
+      <div className="auth2__register">
+        Pas encore de compte ?{" "}
         <a
           href="#"
           onClick={(e) => {
             e.preventDefault();
             switchForm();
           }}>
-          Register
+          Inscription
         </a>
       </div>
     </form>

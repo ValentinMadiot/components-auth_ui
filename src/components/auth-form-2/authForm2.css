@@ -14,7 +14,7 @@
   font-size: var(--normal-font-size);
 }
 
-.auth2 .login__form {
+.auth2__form {
   min-height: 460px;
   position: relative;
   margin-inline: 1rem;
@@ -26,23 +26,23 @@
   backdrop-filter: blur(16px);
 }
 
-.auth2 .login__title {
+.auth2__title {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1.25rem;
 }
 
-.auth2 .login__inputs,
-.auth2 .login__box {
+.auth2__inputs,
+.auth2__box {
   display: grid;
 }
 
-.auth2 .login__inputs {
+.auth2__inputs {
   row-gap: 1.25rem;
   margin-bottom: 1rem;
 }
 
-.auth2 .login__box {
+.auth2__box {
   grid-template-columns: 1fr max-content;
   column-gap: 0.75rem;
   align-items: center;
@@ -51,7 +51,7 @@
   border-radius: 4rem;
 }
 
-.auth2 .login__input {
+.auth2__input {
   width: 100%;
   background: none;
   color: var(--white-color);
@@ -60,46 +60,53 @@
   font-size: var(--normal-font-size);
 }
 
-.auth2 .login__input::placeholder {
+.auth2__input::placeholder {
   color: var(--white-color);
 }
 
-.auth2 .login__box i {
+.auth2__box i {
   font-size: 1.25rem;
 }
 
-.auth2 .login__check,
-.auth2 .login__check-box {
+.auth2__check,
+.auth2__check-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.auth2 .login__check {
+.auth2__check {
   margin-bottom: 1rem;
   font-size: var(--small-font-size);
 }
 
-.auth2 .login__check-box {
+.auth2__check-box {
   column-gap: 0.5rem;
 }
 
-.auth2 .login__check-input {
+.auth2__check-input {
   width: 16px;
   height: 16px;
   accent-color: var(--white-color);
 }
 
-.auth2 .login__forgot {
-  color: var(--white-color);
-  cursor: pointer;
+.auth2__check-label {
+  max-width: 80px;
 }
 
-.auth2 .login__forgot:hover {
+.auth2__forgot {
+  color: var(--white-color);
+  cursor: pointer;
+  max-width: 100px;
+  display: inline-block;
+  text-align: right;
+}
+
+.auth2__forgot:hover {
   text-decoration: underline;
 }
 
-.auth2 .login__button {
+.auth2__button {
   width: 100%;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -112,18 +119,30 @@
   font-size: var(--normal-font-size);
 }
 
-.auth2 .login__register {
+.auth2__register {
   font-size: var(--small-font-size);
   text-align: center;
 }
 
-.auth2 .login__register a {
+.auth2__register a {
   color: var(--black-color);
   font-weight: var(--font-medium);
 }
 
-.auth2 .login__register a:hover {
+.auth2__register a:hover {
   text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (min-width: 476px) {
+  .auth2__check-label {
+    max-width: none;
+  }
+
+  .auth2__forgot {
+    max-width: none;
+    display: inline;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -131,12 +150,12 @@
     justify-content: center;
   }
 
-  .auth2 .login__form {
+  .auth2__form {
     width: 420px;
     padding-inline: 2.5rem;
   }
 
-  .auth2 .login__title {
+  .auth2__title {
     margin-bottom: 2rem;
   }
 }

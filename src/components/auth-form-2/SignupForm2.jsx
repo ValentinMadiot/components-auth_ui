@@ -1,43 +1,43 @@
 const SignupForm2 = ({ switchForm }) => {
   return (
-    <form className="login__form">
-      <h1 className="login__title">Register</h1>
+    <form className="auth2__form">
+      <h1 className="auth2__title">Inscription</h1>
 
-      <div className="login__inputs">
-        <div className="login__box">
+      <div className="auth2__inputs">
+        <div className="auth2__box">
           <input
             type="email"
             placeholder="Email"
             required
-            className="login__input"
+            className="auth2__input"
           />
           <i className="ri-mail-fill"></i>
         </div>
 
-        <div className="login__box">
+        <div className="auth2__box">
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Mot de passe"
             required
-            className="login__input"
+            className="auth2__input"
           />
           <i className="ri-lock-2-fill"></i>
         </div>
       </div>
 
-      <button type="submit" className="login__button">
-        Register
+      <button type="submit" className="auth2__button">
+        S’inscrire
       </button>
 
-      <div className="login__register">
-        Already have an account?{" "}
+      <div className="auth2__register">
+        Vous avez déjà un compte ?{" "}
         <a
           href="#"
           onClick={(e) => {
             e.preventDefault();
             switchForm();
           }}>
-          Login
+          Connexion
         </a>
       </div>
     </form>
