@@ -204,9 +204,9 @@
 .auth3__check-input:checked::before {
   content: "✔";
   display: block;
-  color: #fff;
+  color: black;
   font-size: 0.75rem;
-  transform: translate(1.5px, -2.5px);
+  transform: translate(0px, -3px);
 }
 
 .auth3__check-label {
@@ -324,6 +324,10 @@
   .auth3__input:focus,
   .auth3__input:valid {
     border: 2.5px solid var(--color-orange);
+  }
+
+  .auth3__check-input:checked::before {
+    transform: translate(1.5px, -2.5px);
   }
 
   .auth3__button {

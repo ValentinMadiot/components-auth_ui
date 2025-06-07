@@ -10,7 +10,7 @@ const AuthForm1 = () => {
     setIsLogin((prev) => !prev);
   };
   return (
-    <section className="authWrapper auth1" id="auth1">
+    <section className="auth1" id="auth1">
       <div className={`flip-card ${!isLogin ? "flipped" : ""}`}>
         <div className="flip-card-inner">
           <div className="flip-card-front">

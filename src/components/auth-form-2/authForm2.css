@@ -87,7 +87,7 @@
 .auth2__check-input {
   width: 16px;
   height: 16px;
-  accent-color: var(--white-color);
+  /* accent-color: var(--white-color); */
 }
 
 .auth2__check-label {
