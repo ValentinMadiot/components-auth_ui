@@ -14,7 +14,7 @@
   font-size: var(--normal-font-size);
 }
 
-.auth1 .login__form {
+.auth1__form {
   min-height: 522px;
   position: relative;
   background-color: hsla(0, 0%, 10%, 0.1);
@@ -25,24 +25,24 @@
   backdrop-filter: blur(8px);
 }
 
-.auth1 .login__title {
+.auth1__title {
   text-align: center;
   font-size: 1.75rem;
   font-weight: var(--font-medium);
   margin-bottom: 2rem;
 }
 
-.auth1 .login__content,
-.auth1 .login__box {
+.auth1__content,
+.auth1__box {
   display: grid;
 }
 
-.auth1 .login__content {
+.auth1__content {
   row-gap: 1.75rem;
   margin-bottom: 1.5rem;
 }
 
-.auth1 .login__box {
+.auth1__box {
   grid-template-columns: max-content 1fr;
   align-items: center;
   column-gap: 0.75rem;
@@ -50,12 +50,12 @@
   position: relative;
 }
 
-.auth1 .login__icon,
-.auth1 .login__eye {
+.auth1__icon,
+.auth1__eye {
   font-size: 1.25rem;
 }
 
-.auth1 .login__input {
+.auth1__input {
   width: 100%;
   padding-block: 0.9rem;
   background: none;
@@ -66,11 +66,11 @@
   z-index: 1;
 }
 
-.auth1 .login__box-input {
+.auth1__box-input {
   position: relative;
 }
 
-.auth1 .login__label {
+.auth1__label {
   position: absolute;
   left: 0;
   top: 13px;
@@ -78,7 +78,7 @@
   transition: top 0.3s, font-size 0.3s;
 }
 
-.auth1 .login__eye {
+.auth1__eye {
   position: absolute;
   right: 0;
   top: 13px;
@@ -86,49 +86,56 @@
   cursor: pointer;
 }
 
-.auth1 .login__box:nth-child(2) input {
+.auth1__box:nth-child(2) input {
   padding-right: 1.8rem;
 }
 
-.auth1 .login__check,
-.auth1 .login__check-group {
+.auth1__check,
+.auth1__check-group {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.auth1 .login__check {
+.auth1__check {
   margin-bottom: 1.5rem;
 }
 
-.auth1 .login__check-label,
-.auth1 .login__forgot,
-.auth1 .login__register {
+.auth1__check-label,
+.auth1__forgot,
+.auth1__register {
   font-size: var(--small-font-size);
 }
 
-.auth1 .login__check-group {
+.auth1__check-group {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.auth1 .login__check-input {
+.auth1__check-input {
   width: 16px;
   height: 16px;
   accent-color: var(--white-color);
 }
 
-.auth1 .login__forgot {
-  color: var(--white-color);
-  cursor: pointer;
+.auth1__check-label {
+  max-width: 80px;
 }
 
-.auth1 .login__forgot:hover {
+.auth1__forgot {
+  color: var(--white-color);
+  cursor: pointer;
+  max-width: 100px;
+  display: inline-block;
+  text-align: right;
+}
+
+.auth1__forgot:hover {
   text-decoration: underline;
 }
 
-.auth1 .login__button {
+.auth1__button {
   width: 100%;
   padding: 1rem;
   border-radius: 0.5rem;
@@ -141,41 +148,50 @@
   color: var(--black-color);
 }
 
-.auth1 .login__register {
+.auth1__register {
   text-align: center;
 }
 
-.auth1 .login__register a {
+.auth1__register a {
   color: var(--black-color);
   font-weight: var(--font-medium);
 }
 
-.auth1 .login__register a:hover {
+.auth1__register a:hover {
   text-decoration: underline;
 }
 
 /* Input focus animation */
-.auth1 .login__input:focus + .login__label,
-.auth1
-  .login__input:not(:placeholder-shown).login__input:not(:focus)
-  + .login__label {
+.auth1__input:focus + .auth1__label,
+.auth1__input:not(:placeholder-shown).auth1__input:not(:focus) + .auth1__label {
   top: -12px;
   font-size: var(--small-font-size);
 }
 
 /* Responsive */
+@media screen and (min-width: 476px) {
+  .auth1__check-label {
+    max-width: none;
+  }
+
+  .auth1__forgot {
+    max-width: none;
+    display: inline;
+  }
+}
+
 @media screen and (min-width: 576px) {
   .auth1 {
     justify-content: center;
   }
 
-  .auth1 .login__form {
+  .auth1__form {
     width: 432px;
     padding: 4rem 3rem 3.5rem;
     border-radius: 1.5rem;
   }
 
-  .auth1 .login__title {
+  .auth1__title {
     font-size: 2rem;
   }
 }
