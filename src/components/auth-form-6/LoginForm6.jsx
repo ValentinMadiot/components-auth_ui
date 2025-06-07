@@ -45,9 +45,7 @@ const LoginForm6 = ({ onSwitch }) => {
             </div>
           </div>
 
-          <a href="#" className="auth6__forgot">
-            Forgot your password?
-          </a>
+          <a className="auth6__forgot">Forgot your password?</a>
 
           <button type="submit" className="auth6__button">
             Login
@@ -58,7 +56,7 @@ const LoginForm6 = ({ onSwitch }) => {
           <p className="auth6__social-title">Or login with</p>
 
           <div className="auth6__social-links">
-            <a href="#" className="auth6__social-link">
+            <a className="auth6__social-link">
               <img
                 src={iconGoogle}
                 alt="social link"
@@ -66,7 +64,7 @@ const LoginForm6 = ({ onSwitch }) => {
               />
             </a>
 
-            <a href="#" className="auth6__social-link">
+            <a className="auth6__social-link">
               <img
                 src={iconFacebook}
                 alt="social link"
@@ -74,7 +72,7 @@ const LoginForm6 = ({ onSwitch }) => {
               />
             </a>
 
-            <a href="#" className="auth6__social-link">
+            <a className="auth6__social-link">
               <img
                 src={iconApple}
                 alt="social link"

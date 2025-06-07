@@ -17,8 +17,8 @@ const LoginForm5 = ({ switchForm }) => {
 
       <div className="form__checkboxes">
         <article>
-          <input type="checkbox" id="remember" className="checkbox" />
-          <label htmlFor="remember" className="label">
+          <input type="checkbox" id="checkbox" className="checkbox" />
+          <label htmlFor="checkbox" className="label">
             <div className="ball"></div>
           </label>
         </article>

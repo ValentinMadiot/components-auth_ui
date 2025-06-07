@@ -92,6 +92,7 @@
 
 .auth2 .login__forgot {
   color: var(--white-color);
+  cursor: pointer;
 }
 
 .auth2 .login__forgot:hover {

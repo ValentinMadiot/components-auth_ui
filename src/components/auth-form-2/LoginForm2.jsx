@@ -37,9 +37,7 @@ const LoginForm2 = ({ switchForm }) => {
           </label>
         </div>
 
-        <a href="#" className="login__forgot">
-          Forgot Password?
-        </a>
+        <a className="login__forgot">Forgot Password?</a>
       </div>
 
       <button type="submit" className="login__button">

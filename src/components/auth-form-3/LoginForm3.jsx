@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 const LoginForm3 = ({ switchForm }) => {
+  const [showPassword, setShowPassword] = useState(false);
+
   return (
     <form className="login__form">
       <div>
@@ -24,13 +28,16 @@ const LoginForm3 = ({ switchForm }) => {
             <label className="login__label">Password</label>
             <div className="login__box">
               <input
-                type="password"
+                className="login__input"
+                type={showPassword ? "text" : "password"}
                 placeholder="Enter your password"
                 required
-                className="login__input"
-                id="input-pass"
               />
-              <i className="ri-eye-off-line login__eye" id="input-icon"></i>
+              <i
+                className={`ri-${
+                  showPassword ? "eye-line" : "eye-off-line"
+                } login__eye`}
+                onClick={() => setShowPassword(!showPassword)}></i>
             </div>
           </div>
         </div>
@@ -55,9 +62,7 @@ const LoginForm3 = ({ switchForm }) => {
             Sign Up
           </button>
         </div>
-        <a href="#" className="login__forgot">
-          Forgot Password?
-        </a>
+        <a className="login__forgot">Forgot Password?</a>
       </div>
     </form>
   );

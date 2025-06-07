@@ -180,6 +180,7 @@
   font-weight: var(--font-semi-bold);
   color: var(--color-orange);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .auth3 .login__forgot:hover {

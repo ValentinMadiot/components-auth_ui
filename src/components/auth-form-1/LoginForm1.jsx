@@ -1,4 +1,7 @@
+import { useState } from "react";
 const LoginForm = ({ switchForm }) => {
+  const [showPassword, setShowPassword] = useState(false);
+
   return (
     <form className="login__form">
       <h1 className="login__title">Login</h1>
@@ -21,14 +24,18 @@ const LoginForm = ({ switchForm }) => {
           <i className="ri-lock-2-line login__icon"></i>
           <div className="login__box-input">
             <input
-              type="password"
+              type={showPassword ? "text" : "password"}
               required
               className="login__input"
               id="login-pass"
               placeholder=" "
             />
             <label className="login__label">Password</label>
-            <i className="ri-eye-off-line login__eye" id="login-eye"></i>
+            <i
+              className={`ri-${
+                showPassword ? "eye-line" : "eye-off-line"
+              } login__eye`}
+              onClick={() => setShowPassword(!showPassword)}></i>
           </div>
         </div>
       </div>
@@ -40,9 +47,7 @@ const LoginForm = ({ switchForm }) => {
             Remember me
           </label>
         </div>
-        <a href="#" className="login__forgot">
-          Forgot Password?
-        </a>
+        <a className="login__forgot">Forgot Password?</a>
       </div>
 
       <button type="submit" className="login__button">

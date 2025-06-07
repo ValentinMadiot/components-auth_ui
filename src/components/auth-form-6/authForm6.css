@@ -140,6 +140,7 @@
   font-weight: var(--font-semi-bold);
   color: var(--text-color-auth6);
   transition: color 0.4s;
+  cursor: pointer;
 }
 
 .auth6__forgot:hover {
@@ -198,6 +199,7 @@
   display: grid;
   place-items: center;
   transition: transform 0.4s;
+  cursor: pointer;
 }
 
 .auth6__social-link:hover {

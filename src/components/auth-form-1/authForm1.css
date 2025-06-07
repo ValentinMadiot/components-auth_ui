@@ -121,6 +121,7 @@
 
 .auth1 .login__forgot {
   color: var(--white-color);
+  cursor: pointer;
 }
 
 .auth1 .login__forgot:hover {
