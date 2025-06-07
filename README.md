@@ -1,12 +1,71 @@
-# React + Vite
+<div align="center">  
+  <a href="https://components-authentication.vercel.app" target="_blank">  
+    <img src=".docs/preview.png" alt="Aperçu des composants d'authentification">  
+  </a>
+  </br></br>  
+  <h3 align="center">🔐 Composants d'Authentification</h3>  
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## <br /> 📌 Sommaire
 
-Currently, two official plugins are available:
+&nbsp;&nbsp;&nbsp; 🎨 &nbsp; [**Introduction**](#introduction)<br />
+&nbsp;&nbsp;&nbsp; 🛠️ &nbsp; [**Technologies**](#technologies)<br />
+&nbsp;&nbsp;&nbsp; 🎯 &nbsp; [**Fonctionnalités**](#fonctionnalités)<br />
+&nbsp;&nbsp;&nbsp; 🚀 &nbsp; [**Installation**](#installation)<br />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## <br /> <a name="introduction">🎨 Introduction</a>
 
-## Expanding the ESLint configuration
+Ce projet présente une collection de composants React d’authentification modernes, conçus pour être facilement intégrés dans n’importe quelle application web.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Chaque variation `auth1` à `auth6` propose un design distinct, combinant :
+
+- Animations fluides (flip, transition, apparition)
+- Formulaires stylisés pour la connexion et l’inscription
+- Responsive design pensé mobile & desktop
+- Architecture modulaire et facilement réutilisable
+
+Le but est d’offrir aux développeurs des bases UI prêtes à l’emploi, avec un code propre et personnalisable, pour tout projet nécessitant une interface d’authentification.
+
+## <br /> <a name="technologies">🛠️ Technologies</a>
+
+- React 18 + Vite pour un développement rapide
+- CSS natif modulaire (1 fichier par composant)
+- Hooks React : `useState`, `useEffect`
+- Convention BEM : `authX__element`
+- Animations 3D Flip : `auth1`
+- Aucun framework UI : 100% custom
+- Déploiement sur [Vercel](https://components-authentication.vercel.app/)
+
+## <br /> <a name="fonctionnalités">🎯 Fonctionnalités</a>
+
+- Interface Login / Signup intégrée
+- Bascule animée entre les formulaires
+- Champs contrôlés avec placeholder flottant
+- Affichage/Masquage du mot de passe
+- Structure modulaire par dossier : facile à copier / intégrer
+- Comportement responsive adapté aux petits écrans
+- Parfait pour : landing pages, dashboards, SaaS, MVP, etc.
+
+## <br /> <a name="installation">🚀 Installation</a>
+
+### ✅ Pré-requis
+
+- 🛠️ **[Git](https://git-scm.com/)**
+- 🔧 **[Node.js](https://nodejs.org/fr/)**
+- 📦 **[npm](https://www.npmjs.com/)**
+
+### 📥 Cloner le projet
+
+```bash
+git clone https://github.com/ValentinMadiot/components-login_css.git
+```
+
+### ▶️ Lancer l’application
+
+#### Frontend (port : 5173)
+
+```bash
+cd ValentinMadiot/components-login_css
+npm install
+npm run dev
+```

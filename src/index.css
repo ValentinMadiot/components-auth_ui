@@ -102,8 +102,8 @@ img {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--colorPrimary);
-  padding: 1rem;
+  /* background-color: var(--colorPrimary); */
+  /* padding: 1rem; */
   gap: 5rem;
   flex-wrap: wrap;
 }
@@ -134,8 +134,8 @@ img {
   height: 100%;
   backface-visibility: hidden;
   border-radius: 1rem;
-  background-color: var(--colorSecondary);
-  padding: 2rem;
+  /* background-color: var(--colorSecondary); */
+  /* padding: 2rem; */
   display: flex;
   flex-direction: column;
   justify-content: center;
