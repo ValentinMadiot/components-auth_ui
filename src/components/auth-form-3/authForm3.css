@@ -115,15 +115,15 @@
   font-size: 1rem;
 }
 
-.auth3__field.invalid .login__input {
+.auth3__field.invalid .auth3__input {
   border-color: var(--error-color);
 }
 
-.auth3__field.invalid .login__error {
+.auth3__field.invalid .auth3__error {
   opacity: 1;
 }
 
-.auth3__field.valid .login__input {
+.auth3__field.valid .auth3__input {
   border-color: var(--color-orange);
 }
 
@@ -165,7 +165,7 @@
   position: relative;
 }
 
-.auth3__box .login__input {
+.auth3__box .auth3__input {
   padding-right: 36px;
 }
 
