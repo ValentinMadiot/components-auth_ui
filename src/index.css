@@ -97,7 +97,7 @@ img {
 }
 
 /* === ANIMATION === */
-.authWrapper {
+/* .authWrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,4 +144,4 @@ img {
 
 .flip-card-back {
   transform: rotateY(180deg);
-}
+} */

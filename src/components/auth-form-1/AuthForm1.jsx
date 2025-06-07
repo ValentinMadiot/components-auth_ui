@@ -6,21 +6,13 @@ import "./authForm1.css";
 const AuthForm1 = () => {
   const [isLogin, setIsLogin] = useState(true);
 
-  const switchForm = () => {
-    setIsLogin((prev) => !prev);
-  };
   return (
     <section className="auth1" id="auth1">
-      <div className={`flip-card ${!isLogin ? "flipped" : ""}`}>
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <LoginForm switchForm={switchForm} />
-          </div>
-          <div className="flip-card-back">
-            <SignupForm switchForm={switchForm} />
-          </div>
-        </div>
-      </div>
+      {isLogin ? (
+        <LoginForm switchForm={() => setIsLogin(false)} />
+      ) : (
+        <SignupForm switchForm={() => setIsLogin(true)} />
+      )}
     </section>
   );
 };

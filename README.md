@@ -19,7 +19,6 @@ Ce projet présente une collection de composants React d’authentification mode
 
 Chaque variation `auth1` à `auth6` propose un design distinct, combinant :
 
-- Animations fluides (flip, transition, apparition)
 - Formulaires stylisés pour la connexion et l’inscription
 - Responsive design pensé mobile & desktop
 - Architecture modulaire et facilement réutilisable
@@ -32,16 +31,14 @@ Le but est d’offrir aux développeurs des bases UI prêtes à l’emploi, avec
 - CSS natif modulaire (1 fichier par composant)
 - Hooks React : `useState`, `useEffect`
 - Convention BEM : `authX__element`
-- Animations 3D Flip : `auth1`
 - Aucun framework UI : 100% custom
 - Déploiement sur [Vercel](https://components-authentication.vercel.app/)
 
 ## <br /> <a name="fonctionnalités">🎯 Fonctionnalités</a>
 
 - Interface Login / Signup intégrée
-- Bascule animée entre les formulaires
 - Champs contrôlés avec placeholder flottant
-- Affichage/Masquage du mot de passe
+- Affichage / Masquage du mot de passe
 - Structure modulaire par dossier : facile à copier / intégrer
 - Comportement responsive adapté aux petits écrans
 - Parfait pour : landing pages, dashboards, SaaS, MVP, etc.
