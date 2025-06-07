@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import regexString from "./regexString";
-import "./TextReveal.css";
+import "./textReveal.css";
 
 function TextReveal() {
   const headingChars = regexString("Composants d'Authentification");
