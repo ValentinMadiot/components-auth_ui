@@ -118,6 +118,12 @@
   }
 }
 
+@media (max-width: 516px) {
+  .auth-menu {
+    padding: 0 2.2rem;
+  }
+}
+
 @media (max-width: 300px) {
   .auth-menu {
     gap: 1.5rem;

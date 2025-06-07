@@ -5,7 +5,7 @@ import "./TextReveal.css";
 function TextReveal() {
   const headingChars = regexString("Composants d'Authentification");
   const textChars = regexString(
-    "Découvrez différentes interfaces d'inscription et de connexion..."
+    "Découvrez différentes interfaces d'inscription et de connexion"
   );
 
   const charVariants = {
