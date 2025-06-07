@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-const SignupForm6 = ({ onSwitch }) => {
+const SignupForm6 = ({ switchForm }) => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
     <div className="auth6__register">
-      <h1 className="auth6__title">Create new account.</h1>
+      <h1 className="auth6__title">Créer un compte.</h1>
 
       <div className="auth6__area">
         <form className="auth6__form">
@@ -20,7 +20,7 @@ const SignupForm6 = ({ onSwitch }) => {
                   className="auth6__input"
                 />
                 <label htmlFor="firstName" className="auth6__label">
-                  First name
+                  Prénom
                 </label>
 
                 <i className="ri-id-card-fill auth6__icon"></i>
@@ -35,7 +35,7 @@ const SignupForm6 = ({ onSwitch }) => {
                   className="auth6__input"
                 />
                 <label htmlFor="lastName" className="auth6__label">
-                  Last name
+                  Nom
                 </label>
                 <i className="ri-id-card-fill auth6__icon"></i>
               </div>
@@ -64,7 +64,7 @@ const SignupForm6 = ({ onSwitch }) => {
                 className="auth6__input"
               />
               <label htmlFor="passwordCreate" className="auth6__label">
-                Password
+                Mot de passe
               </label>
               <i
                 className={`ri-${
@@ -75,14 +75,14 @@ const SignupForm6 = ({ onSwitch }) => {
           </div>
 
           <button type="submit" className="auth6__button">
-            Create Account
+            Créer un compte
           </button>
         </form>
 
         <p className="auth6__switch">
-          Already have an account?{" "}
-          <button onClick={onSwitch} type="button">
-            Log In
+          Vous avez déjà un compte ?{" "}
+          <button onClick={switchForm} type="button">
+            Connexion
           </button>
         </p>
       </div>

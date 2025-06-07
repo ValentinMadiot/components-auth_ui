@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { iconApple, iconFacebook, iconGoogle } from "./assets/img/index";
 
-const LoginForm6 = ({ onSwitch }) => {
+const LoginForm6 = ({ switchForm }) => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
     <div className="auth6__login">
-      <h1 className="auth6__title">Log in to your account.</h1>
+      <h1 className="auth6__title">Connectez-vous.</h1>
 
       <div className="auth6__area">
         <form className="auth6__form">
@@ -34,7 +34,7 @@ const LoginForm6 = ({ onSwitch }) => {
                 id="password"
               />
               <label htmlFor="password" className="auth6__label">
-                Password
+                Mot de passe
               </label>
               <i
                 className={`ri-${
@@ -45,21 +45,21 @@ const LoginForm6 = ({ onSwitch }) => {
             </div>
           </div>
 
-          <a className="auth6__forgot">Forgot your password?</a>
+          <a className="auth6__forgot">Mot de passe oublié ?</a>
 
           <button type="submit" className="auth6__button">
-            Login
+            Connexion
           </button>
         </form>
 
         <div className="auth6__social">
-          <p className="auth6__social-title">Or login with</p>
+          <p className="auth6__social-title">Ou connectez-vous avec</p>
 
           <div className="auth6__social-links">
             <a className="auth6__social-link">
               <img
                 src={iconGoogle}
-                alt="social link"
+                alt="Lien Google"
                 className="auth6__social-img"
               />
             </a>
@@ -67,7 +67,7 @@ const LoginForm6 = ({ onSwitch }) => {
             <a className="auth6__social-link">
               <img
                 src={iconFacebook}
-                alt="social link"
+                alt="Lien Facebook"
                 className="auth6__social-img"
               />
             </a>
@@ -75,7 +75,7 @@ const LoginForm6 = ({ onSwitch }) => {
             <a className="auth6__social-link">
               <img
                 src={iconApple}
-                alt="social link"
+                alt="Lien Apple"
                 className="auth6__social-img"
               />
             </a>
@@ -83,9 +83,9 @@ const LoginForm6 = ({ onSwitch }) => {
         </div>
 
         <p className="auth6__switch">
-          Don't have an account?{" "}
-          <button onClick={onSwitch} id="loginButtonRegister" type="button">
-            Create Account
+          Vous n’avez pas de compte ?{" "}
+          <button onClick={switchForm} id="loginButtonRegister" type="button">
+            Créer un compte
           </button>
         </p>
       </div>

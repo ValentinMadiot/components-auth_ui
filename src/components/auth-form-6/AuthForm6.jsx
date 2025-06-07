@@ -1,24 +1,20 @@
 import { useState } from "react";
-import "./authForm6.css";
 import LoginForm6 from "./LoginForm6";
 import SignupForm6 from "./SignupForm6";
 import SvgMaskedImage from "./SvgMaskedImage";
+import "./authForm6.css";
 
 const AuthForm6 = () => {
   const [isLogin, setIsLogin] = useState(true);
 
-  const toggleForm = () => {
-    setIsLogin(!isLogin);
-  };
-
   return (
     <section className="auth6__bg" id="auth6">
       <SvgMaskedImage />
-      <div className={`auth6 ${!isLogin ? "active" : ""}`}>
+      <div className="auth6">
         {isLogin ? (
-          <LoginForm6 onSwitch={toggleForm} />
+          <LoginForm6 switchForm={() => setIsLogin(false)} />
         ) : (
-          <SignupForm6 onSwitch={toggleForm} />
+          <SignupForm6 switchForm={() => setIsLogin(true)} />
         )}
       </div>
     </section>
