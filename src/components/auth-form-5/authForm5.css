@@ -15,7 +15,7 @@
   font-size: var(--normal-font-size);
 }
 
-.form__container {
+.auth5__container {
   background-color: var(--color-text);
   padding: 1rem;
   border-radius: 1rem;
@@ -23,27 +23,27 @@
   width: 100%;
 }
 
-.form__container h1 {
+.auth5__container h1 {
   text-align: center;
   margin-bottom: 0.75rem;
   color: var(--color-red);
 }
 
-.form__inner {
+.auth5__inner {
   display: flex;
   flex-direction: column;
 }
 
-.login {
+.auth5__login {
   flex-direction: column !important;
   gap: 0 !important;
 }
 
-.form__inner article {
+.auth5__inner article {
   margin-top: 0.75rem;
 }
 
-.form__container label {
+.auth5__container label {
   display: block;
   font-weight: bold;
   font-size: 0.8rem;
@@ -53,7 +53,7 @@
   color: var(--color-red-light);
 }
 
-.form__container input {
+.auth5__container input {
   border: 2px solid var(--color-red-lighten);
   border-radius: 0.6rem;
   outline: none;
@@ -62,11 +62,11 @@
   font-family: var(--font-family);
 }
 
-.form__container input:focus {
+.auth5__container input:focus {
   border: 2px solid var(--color-red);
 }
 
-.form__btn {
+.auth5__btn {
   padding: 0.625rem 3rem;
   font-size: 1rem;
   background: linear-gradient(180deg, var(--color-red), var(--color-red-light));
@@ -79,19 +79,19 @@
   width: 100%;
 }
 
-.form__btn:hover {
+.auth5__btn:hover {
   cursor: pointer;
   opacity: 0.75;
 }
 
-.form__checkboxes {
+.auth5__checkboxes {
   display: flex;
   align-items: center;
   justify-content: start;
   margin: 1rem 0 0.5rem 0;
 }
 
-.form__checkboxes small {
+.auth5__checkboxes small {
   color: var(--color-red-lighten);
 }
 
@@ -125,20 +125,20 @@
   transform: translateX(22.5px);
 }
 
-.form__switch {
+.auth5__switch {
   margin-top: 1rem;
   text-align: center;
   font-size: var(--small-font-size);
   color: var(--color-red-light);
 }
 
-.form__switch span {
+.auth5__switch span {
   font-weight: 600;
   color: var(--color-red);
   cursor: pointer;
 }
 
-.form__switch span:hover {
+.auth5__switch span:hover {
   text-decoration: underline;
 }
 
@@ -147,7 +147,7 @@
     padding: 2rem 1rem;
   }
 
-  .form__container {
+  .auth5__container {
     padding: 2rem;
     min-height: 645px;
     min-width: 425px;
@@ -161,21 +161,21 @@
     min-height: auto;
   }
 
-  .form__container {
+  .auth5__container {
     min-height: 520px;
     min-width: 506px;
   }
 
-  .form__container h1 {
+  .auth5__container h1 {
     margin-bottom: 2rem;
   }
 
-  .form__inner {
+  .auth5__inner {
     flex-direction: row;
     gap: 1.25rem;
   }
 
-  .form__inner article {
+  .auth5__inner article {
     flex: 1;
     margin-top: 1.25rem;
   }

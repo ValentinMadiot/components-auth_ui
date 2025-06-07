@@ -1,35 +1,36 @@
 const LoginForm5 = ({ switchForm }) => {
   return (
-    <form className="form__container">
-      <h1>Log In</h1>
+    <form className="auth5__container">
+      <h1>Connexion</h1>
 
-      <div className="form__inner login">
+      <div className="auth5__inner auth5__login">
         <article>
           <label htmlFor="email">Email</label>
           <input type="email" name="email" id="email" required />
         </article>
 
         <article>
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password">Mot de passe</label>
           <input type="password" name="password" id="password" required />
         </article>
       </div>
 
-      <div className="form__checkboxes">
+      <div className="auth5__checkboxes">
         <article>
           <input type="checkbox" id="checkbox" className="checkbox" />
           <label htmlFor="checkbox" className="label">
             <div className="ball"></div>
           </label>
         </article>
-        <small>Remember me</small>
+        <small>Se souvenir de moi</small>
       </div>
 
-      <button className="form__btn" type="submit">
-        Log In
+      <button className="auth5__btn" type="submit">
+        Connexion
       </button>
-      <p className="form__switch">
-        Don't have an account? <span onClick={switchForm}>Sign up</span>
+
+      <p className="auth5__switch">
+        Pas encore de compte ? <span onClick={switchForm}>Inscription</span>
       </p>
     </form>
   );
