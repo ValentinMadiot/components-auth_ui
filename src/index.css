@@ -97,22 +97,30 @@ img {
 }
 
 /* === ANIMATION === */
-.flip-card {
-  /* background-color: transparent; */
-  width: 400px;
-  height: 530px;
+.authWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: transparent;
+  padding: 1rem;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
 
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 430px;
   perspective: 1000px;
-  transform-style: preserve-3d;
-  /* overflow: hidden; */
 }
 
 .flip-card-inner {
-  /* position: relative; */
+  position: relative;
   width: 100%;
   height: 100%;
-  transform-style: preserve-3d;
   transition: transform 0.8s ease-in-out;
+  transform-style: preserve-3d;
 }
 
 .flipped .flip-card-inner {
@@ -124,17 +132,14 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
   backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  /* border-radius: 1rem; */
-  /* background-color: transparent; */
-  /* padding: 2rem; */
-  /* display: flex;
+  border-radius: 1rem;
+  background-color: transparent;
+  padding: 2rem;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
 }
 
 .flip-card-back {
