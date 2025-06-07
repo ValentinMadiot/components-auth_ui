@@ -14,34 +14,34 @@
   font-size: var(--normal-font-size);
 }
 
-.auth4 .form__content {
+.auth4__content {
   display: grid;
   row-gap: 1.5rem;
 }
 
-.auth4 .form__input,
-.auth4 .form__label,
-.auth4 .form__submit {
+.auth4__input,
+.auth4__label,
+.auth4__submit {
   font-size: var(--normal-font-size);
   font-family: var(--font-family);
   border: 0;
   outline: none;
 }
 
-.auth4 .form__box {
+.auth4__box {
   width: 312px;
   height: 59px;
   position: relative;
 }
 
-.auth4 .form__shadow {
+.auth4__shadow {
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: var(--black-color);
 }
 
-.auth4 .form__input {
+.auth4__input {
   position: absolute;
   border: 2.5px solid var(--black-color);
   background-color: var(--white-color);
@@ -52,11 +52,11 @@
   transition: transform 0.3s;
 }
 
-.auth4 .form__input::placeholder {
+.auth4__input::placeholder {
   transition: opacity 0.5s;
 }
 
-.auth4 .form__label {
+.auth4__label {
   z-index: 100;
   position: absolute;
   top: 16px;
@@ -68,12 +68,12 @@
   transition: 0.2s;
 }
 
-.auth4 .form__button {
+.auth4__button {
   justify-self: flex-end;
   background-color: var(--black-color);
 }
 
-.auth4 .form__submit {
+.auth4__submit {
   padding: 0.875rem 1.5rem;
   color: var(--black-color);
   background-color: hsl(79, 100%, 49%);
@@ -81,40 +81,40 @@
   transition: transform 0.3s;
 }
 
-.auth4 .form__submit:hover {
+.auth4__submit:hover {
   transform: translate(-6px, -6px);
 }
 
-.auth4 .form__switch {
+.auth4__switch {
   font-size: var(--small-font-size);
   margin-top: 0.5rem;
   text-align: center;
   color: var(--black-color);
 }
 
-.auth4 .form__switch span {
+.auth4__switch span {
   color: hsl(79, 100%, 49%);
   cursor: pointer;
   font-weight: bold;
 }
 
 /* Input animation */
-.auth4 .form__input:focus::placeholder {
+.auth4__input:focus::placeholder {
   opacity: 0;
   transition: 0.3s;
 }
 
-.auth4 .form__input:focus,
-.auth4 .form__input:not(:placeholder-shown).form__input:not(:focus) {
+.auth4__input:focus,
+.auth4__input:not(:placeholder-shown).auth4__input:not(:focus) {
   transform: translate(-8px, -8px);
   padding: 28px 18px 18px;
   animation: input-animation 0.5s;
 }
 
-.auth4 .form__input:focus + .form__label,
+.auth4__input:focus + .auth4__label,
 .auth4
-  .form__input:not(:placeholder-shown).form__input:not(:focus)
-  + .form__label {
+  .auth4__input:not(:placeholder-shown).auth4__input:not(:focus)
+  + .auth4__label {
   opacity: 1;
   top: 2px;
   left: 12px;
@@ -134,14 +134,14 @@
 }
 
 @media screen and (max-width: 340px) {
-  .auth4 .form__content,
-  .auth4 .form__box {
+  .auth4__content,
+  .auth4__box {
     width: 260px;
   }
 }
 
 @media screen and (min-width: 968px) {
-  .auth4 .form__content {
+  .auth4__content {
     zoom: 1.1;
   }
 }

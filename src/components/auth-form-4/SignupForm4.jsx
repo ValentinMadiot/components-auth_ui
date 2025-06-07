@@ -1,34 +1,35 @@
 const SignupForm4 = ({ switchForm }) => {
   return (
-    <div className="form">
-      <form className="form__content">
-        <div className="form__box">
+    <div className="auth4__wrapper">
+      <form className="auth4__content">
+        <div className="auth4__box">
           <input
             type="email"
-            className="form__input"
-            placeholder="Enter Email"
+            className="auth4__input"
+            placeholder="Entrez votre email"
             required
           />
-          <label className="form__label">ENTER EMAIL</label>
-          <div className="form__shadow"></div>
+          <label className="auth4__label">EMAIL</label>
+          <div className="auth4__shadow"></div>
         </div>
 
-        <div className="form__box">
+        <div className="auth4__box">
           <input
             type="password"
-            className="form__input"
-            placeholder="Enter Password"
+            className="auth4__input"
+            placeholder="Entrez votre mot de passe"
             required
           />
-          <label className="form__label">ENTER PASSWORD</label>
-          <div className="form__shadow"></div>
+          <label className="auth4__label">MOT DE PASSE</label>
+          <div className="auth4__shadow"></div>
         </div>
 
-        <div className="form__button">
-          <input type="submit" className="form__submit" value="Sign Up" />
+        <div className="auth4__button">
+          <input type="submit" className="auth4__submit" value="S’inscrire" />
         </div>
-        <p className="form__switch">
-          Already have an account? <span onClick={switchForm}>Log In</span>
+
+        <p className="auth4__switch">
+          Vous avez déjà un compte ? <span onClick={switchForm}>Connexion</span>
         </p>
       </form>
     </div>
