@@ -54,7 +54,7 @@ Le but est d’offrir aux développeurs des bases UI prêtes à l’emploi, avec
 ### 📥 Cloner le projet
 
 ```bash
-git clone https://github.com/ValentinMadiot/components-auth_ui.git
+git clone https://github.com/ValentinMadiot/components-authentication_ui.git
 ```
 
 ### ▶️ Lancer l’application
@@ -62,7 +62,7 @@ git clone https://github.com/ValentinMadiot/components-auth_ui.git
 #### Frontend (port : 5173)
 
 ```bash
-cd components-auth_ui
+cd components-authentication_ui
 npm install
 npm run dev
 ```
