@@ -57,6 +57,7 @@ Le but est de fournir une base UI propre, personnalisable, pour tout projet néc
 
 ```bash
 git clone https://github.com/ValentinMadiot/components-authentication_ui
+cd components-authentication_ui
 ```
 
 ### ▶️ Lancer le projet
@@ -64,7 +65,6 @@ git clone https://github.com/ValentinMadiot/components-authentication_ui
 #### Frontend
 
 ```bash
-cd components-authentication_ui
 npm install
 npm run dev
 ```
